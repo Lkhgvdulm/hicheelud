@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightslategray;
+    overflow: hidden; 
+}
+
+.menu1 {
+    font-family: sans-serif;
+    background-color: #eee;
+    width: 320px;
+    height: 500px;
+    z-index: 100;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: -240px;
+    transition: all 1s;
+    color: #222;
+}
+
+.menu1:hover {
+    transform: translateX(240px);
+    animation-timing-function: ease-in-out;
+    /* ease-in, ease-out*/
+}
+
+.menu1 .footer-ursdag-title {
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg) translateY(-50%) ;
+    right: -30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.menu {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.ner{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle-button,
+.menu-item {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    background-color: #eee;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.menu-toggle-button {
+    z-index: 2;
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.15);
+    transition-duration: 0.4s; 
+    
+    background-color: #eee;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.menu-toggle-button:hover{
+    transform: scale(1.3);
+}
+.menu-toggle:checked + .menu-toggle-button{
+    transform: scale(1.8);
+    transition-timing-function: linear;
+}
+.menu-toggle:checked~ .blue{
+    transition-delay: 0.05s;
+    transform: translate3d(0.08631px, -104.99997px, 0)
+} 
+.menu-toggle:checked~ .green{
+    transition-delay: 0.1s;
+    transform: translate3d(90.9466px, -52.47586px, 0)
+} .menu-toggle:checked~ .red{
+    transition-delay: 0.15s;
+    transform: translate3d(90.9466px, 52.47586px, 0)
+} .menu-toggle:checked~ .purple{
+    transition-delay: 0.2s;
+    transform: translate3d(0.08631px, 104.99997px, 0)
+} .menu-toggle:checked~ .orange{
+    transition-delay: 0.25s;
+    transform: translate3d(-90.86231px, 52.62064px, 0)
+} .menu-toggle:checked~ .lightblue{
+    transition-delay: 0.3s;
+    transform: translate3d(-91.03006px, -52.33095px, 0)
+} 
+.blue {
+    background-color: #4267b2;
+    color: white;
+}
+.blue:hover {
+    background-color: white;
+    color: #4267b2;
+}
+.green {
+    background-color: #9de60b;
+    color: white;
+}
+.green:hover {
+    background-color: white;
+    color: #9de60b;
+}
+.red {
+    background-color: #ff0000;
+    color: white;
+}
+.red:hover {
+    background-color: white;
+    color: #ff0000;
+}
+.purple {
+    background-color: #665cac;
+    color: white;
+}
+.purple:hover {
+    background-color: white;
+    color: #665cac;
+}
+.orange {
+    background-color: orange;
+    color: white;
+}
+.orange:hover {
+    background-color: white;
+    color: orange;
+}
+.lightblue {
+    background-color: #1da1f2;
+    color: white;
+}
+.lightblue:hover {
+    background-color: white;
+    color: #1da1f2;
+}
+

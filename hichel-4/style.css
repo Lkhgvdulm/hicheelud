@@ -1,0 +1,39 @@
+h3{
+    color: green;
+    font-size: 36px;
+}
+
+h2{color: blue};
+/* 2 ynz bdg*/
+
+/*classaar handah*/
+.garchig2{
+    color: blueviolet;
+}
+
+/*id gaar handah*/
+
+#garchig3{
+    color: black;
+}
+.box{
+    border: 2px greenyellow solid;
+    width: 200px;
+    height: 200px ;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding: 30px;
+    box-sizing: border-box; 
+}
+
+p{
+    text-align: center;
+}
+
+.ug-200{
+    text-align: justify;
+}
+css property 
+background color 

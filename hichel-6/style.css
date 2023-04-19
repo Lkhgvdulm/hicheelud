@@ -1,0 +1,33 @@
+.box{
+    border: 1px solid #444;
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    /*justife-content: flex-start ni default buyu delgetsnii left hesegt elementigg zeregtsuulne
+    2. justify-content: flex-end ni delgetsin right buyu tugsgul zeregtsuulne
+    3. justify content: center ni elementuudig delgetsni gold zeregtsuulne--*/
+
+    justify-content: space-between;
+    /*justify-content ni hevte tenhlegiin daguu zeregtsuulne*/
+    /*justify-content: space-evenly;-- delgetsend nuh talaas n yg tentduu huwana
+    justify-content: space-around; --element maani tal talruga tentsuu za
+    justify-content: space-between; -- delgetsin hooson zaig duurgej zeregtsuulne
+    */
+    align-items: stretch; 
+    /*align-items: stretch; doosh n hurtel ni sungadag baihn ni*/
+    /*align-items ni bosoo tenhlegiin daguu zeregtsulne*/
+    align-items: flex-end;
+    /*bosoo tenhlegiin daguu tugsgul hesegt avaachina*/
+    height: 500px;
+}
+
+.box-2{
+    align-self: flex-start;  /*nth childtai tustei*/
+}
+
+

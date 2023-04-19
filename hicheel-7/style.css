@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.zurag {
+    animation: zurag 4s linear infinite;
+}
+/* @keyframes img   /*ergeldehu yahu gdgig shiidj ugn
+/
+} */  
+
+@keyframes zurag
+{
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% 
+    {
+        transform: translateY(300px);
+
+    }
+}
+

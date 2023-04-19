@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5ECDC;
+}
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.hamgiin-tom {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-between; */
+}
+/* .logo {
+    display: flex;
+} */
+.navbar {
+    width: 100%;
+    height: 250px;
+}
+.neg {
+    
+}
+.logo-1 {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    display: flex;
+}
+
+.logo-1 img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 10px;
+}
+.logo-1 h2{
+    font-size: 15px;
+    margin-top: 40px;
+}
+.search-1 {
+    display: flex;
+   
+}
+
+.search-2 {
+    display: flex;
+  
+}
+.search-2 input {
+    width: 450px;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid navajowhite;
+    outline: none;
+}
+.search-i {
+    width: 40px;
+    height: 40px;
+    background-color: navajowhite;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-left: 1px solid #777;
+    margin-right: 300px;
+}
+.search-i i {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon-i {
+    /* width: 15px;
+    height: 15px; */
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+    
+}
+.sidebar-tom {
+    width: 250px;
+    height: 100%;
+}
+.sidebar-dir {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.sidebar-dir img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* .sb-list ul li{
+    list-style: none;
+    padding: 20px;
+} */
+/* oyuks test */
+.sb-list{
+    /* background-color: lightblue; */
+    width: 200px;
+    height: 100vh;
+    padding: 35px;
+}
+.si-li{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    
+}
+.si-li:hover{
+    background-color: rgba(0, 0, 255, 0.116);
+    border-radius: 30px;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.main-bar {
+    width: 700px;
+    height: auto;
+}
+.main-img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.main-img img {
+    width: 100%;
+    height: 100%;
+}

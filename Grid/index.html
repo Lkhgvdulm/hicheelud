@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>GRID</title>
+	</head>
+	<style>
+		h1 {
+			font-size: 30px;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			text-align: center;
+		}
+
+		.px-em-rem {
+			display: flex;
+		}
+
+		.item {
+			flex: 1;
+			text-align: center;
+			border: 1px solid #000;
+		}
+
+		.h2-em {
+			font-size: 2rem;
+		}
+
+		.h2-rem {
+			font-size: 2rem;
+		}
+
+		.body {
+		}
+
+		.box,
+		.box-1,
+		.box-2 {
+			padding: 2rem;
+			border: 1px solid #000;
+			background-color: aliceblue;
+			font-size: 20px;
+			font-weight: 500;
+			text-align: center;
+		}
+
+		.grid-columns {
+			display: grid;
+			/* grid-template-columns: 300px 300px 300px; hevte tenhlegin dagu buh hemjeeg hamt ugj bolno */
+			/* grid-template-columns: auto auto auto; */
+			/* grid-template-columns: repeat(3, auto); davtaltiin hemjee */
+			/* fr hemjigdehuun */
+			/* grid-template-columns: 1fr 2fr 3fr; ene toondoo huwaagddg ghimu */
+			/* auto-fit&minmax */
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			/*gap ni margintai adil*/
+			grid-gap: 1rem;
+		}
+
+		.section-a {
+			display: grid;
+			grid-template-columns: 1fr 4fr;
+		}
+
+		.products {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 1rem;
+		}
+
+		.product {
+			border: 1px solid #000;
+			background-color: lavender;
+		}
+
+		/*grid row dooshoo zeregtsuulelt hiine*/
+
+		.grid-row {
+			display: grid;
+			grid-template-rows: 1fr 4fr 3fr;
+			grid-auto-rows: 2fr;
+			/*grid-template-rowiin utgaas ugsn iluu hesguud grid-auto-rows iin ugsn utgiig avtomataar gargana*/
+		}
+
+		.grid-span {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		.box-2:first-child {
+			/* grid-column-start:2 ;
+    grid-column-end: 5;
+    grid-row-start:1 ;
+    grid-row-end:3 ; */
+			grid-column: 1 / span 3; /*spanii ardah too boditoor toolno, urdah n elementiin too*/
+			grid-row: 2 / span 4;
+		}
+
+		.box-2:nth-child(6) {
+			grid-column: 2 / span 2;
+			grid-row: 2 / span 2;
+			/*zurasni urd tal ni baganii too, span ii ard tal ni elementin too*/
+		}
+	</style>
+	<body>
+		<!--EM REM-->
+		<!--1rem = 16px-->
+		<h1>EM & REM</h1>
+		<div class="px-em-rem">
+			<div class="item">
+				<h2 class="h2-em">Garchig 1</h2>
+				<p class="h2-em">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+					dolor reprehenderit? Ratione animi dolores repellendus quasi atque
+					recusandae perspiciatis nemo mollitia. Eius laborum aspernatur
+					mollitia nobis explicabo magni impedit quisquam!
+				</p>
+			</div>
+
+			<div class="item">
+				<h2 class="h2-rem">Garchig 1</h2>
+				<p class="h2-rem">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+					dolor reprehenderit? Ratione animi dolores repellendus quasi atque
+					recusandae perspiciatis nemo mollitia. Eius laborum aspernatur
+					mollitia nobis explicabo magni impedit quisquam!
+				</p>
+			</div>
+		</div>
+		<h1>GRID COLUMNS</h1>
+		<!--hevte  tenhlegt zeregtsuulne-->
+		<div class="grid-columns">
+			<div class="box">BOX-1</div>
+			<div class="box">BOX-2</div>
+			<div class="box">BOX-3</div>
+			<div class="box">BOX-4</div>
+			<div class="box">BOX-5</div>
+			<div class="box">BOX-6</div>
+			<div class="box">BOX-7</div>
+			<div class="box">BOX-8</div>
+			<div class="box">BOX-9</div>
+		</div>
+		<div class="section-a">
+			<div class="category-img">
+				<h1>categor garchig</h1>
+				<p>Lorem ipsum dolor</p>
+			</div>
+			<div class="products">
+				<div class="product">
+					<h1>product1</h1>
+					<p>Lorem ipsum</p>
+				</div>
+				<div class="product">
+					<h1>product1</h1>
+					<p>Lorem ipsum</p>
+				</div>
+				<div class="product">
+					<h1>product1</h1>
+					<p>Lorem ipsum</p>
+				</div>
+				<div class="product">
+					<h1>product1</h1>
+					<p>Lorem ipsum</p>
+				</div>
+			</div>
+		</div>
+		<!--Row bosoo tenhlegiin daguu zeregtsuulelt- -->
+		<h1>Grid-row</h1>
+		<div class="grid-row">
+			<div class="box-1">Box-1</div>
+			<div class="box-1">Box-2</div>
+			<div class="box-1">Box-3</div>
+			<div class="box-1">Box-4</div>
+			<div class="box-1">Box-5</div>
+			<div class="box-1">Box-6</div>
+		</div>
+		<!--Grid span-->
+		<h1>Grid Span</h1>
+		<div class="grid-span">
+			<div class="box-2">box-1</div>
+			<div class="box-2">box-2</div>
+			<div class="box-2">box-3</div>
+			<div class="box-2">box-4</div>
+			<div class="box-2">box-5</div>
+			<div class="box-2">box-6</div>
+			<div class="box-2">box-7</div>
+			<div class="box-2">box-8</div>
+			<div class="box-2">box-9</div>
+			<div class="box-2">box-10</div>
+			<div class="box-2">box-11</div>
+			<div class="box-2">box-12</div>
+		</div>
+	</body>
+</html>

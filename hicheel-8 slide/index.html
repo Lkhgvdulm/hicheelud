@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="my-slider">
+        <div class="box">
+            <h1 class="text-[40px] text-[#fff]">days of the being wild</h1>
+        </div>
+        <div class="w-full h-[500px] bg-[beige]">
+
+        </div>
+        <div class="w-full h-[500px] bg-[black]">
+            
+        </div>
+        <div class="w-full h-[500px] bg-[blue]">
+            
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script>
+    $('.my-slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true
+    });
+    </script>
+</body>
+</html>

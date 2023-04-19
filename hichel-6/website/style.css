@@ -1,0 +1,168 @@
+*{     /*universal selector*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    max-height: 80px;
+}
+
+.header{
+    background-color: #e5002b;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+}
+.top-header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.top-header ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600px;
+}
+.main-search{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    padding: 15px;
+    width: 350px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+
+}
+
+.main-search i{
+    font-size: 24px;
+    background-color: azure;
+    padding: 11px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    color: #444;
+}
+
+/*hover*/
+
+.main-search i:hover{
+    background-color: antiquewhite;
+}
+
+.top-header ul li a:hover{
+    color: blue;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.zurag{
+    width: 100%;
+}
+
+
+.zurag{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-2{
+    max-width: 1200px;
+    height: 470px;
+    margin: auto;
+}
+.header-2 img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.zurag{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.zurag img:hover{
+    width: 200px;
+
+}
+
+/*section category*/
+
+.section category{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*banner*/
+
+
+/*flex wrap; wrap delgets shahagdah uyd eswl elementin too ihdeh uyd daraagin murund elementig tegsh hemeer */
+
+/*section b jijig banner*/
+
+.section-b{
+    margin-top: 60px;
+}
+
+
+.section-b img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-img {
+
+display: flex;
+justify-content: center;
+margin-top: 60px;
+
+}
+
+/*section product section-c*/
+
+.c-category{
+    display: flex;
+    height: 420px;
+    margin-top: 80px;
+}
+
+.c-product-category-2{
+    display: flex;
+}
+
+.c-product-category-2 img{
+    display: flex;
+}
+
+.c-product-category-2 img{
+    display: flex;
+    margin-left: 20px;
+    padding: 10px 5xp;
+    background-color: white; 
+}
+
+.c-product-category-2 img{
+    width: 200px;
+    
+}
+

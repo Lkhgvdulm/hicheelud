@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .box{
+            border: 1px solid #444; 
+            padding: 20px;
+            margin: 10px;
+            /*solid n tasraltgu zuraas*/
+        }
+        .main-box{
+            display: flex;
+        }
+        
+        .box:nth-child(2){
+            flex: 2;
+        }
+        
+        .main-box{
+            display: flex;
+        }
+    
+        .box:nth-child(7){
+            color: burlywood;
+
+        }
+        .box:nth-child(8){
+            color: chocolate;
+    
+        }
+        .box:nth-child(9){
+            color: cornflowerblue;
+        }
+        .box:nth-child(10){
+            color: darkmagenta;
+        }
+        </style>
+    
+</head>
+<body>
+    <!--pseudo selector ni-->
+    <!-- ashiglahad hyalbar-->
+    <!--flex bol display propertygin utga-->
+    <!--zeregtsuuleltig mash hyalbar hiine-->
+    <!--bga diviin bairiiig solij chadna-->
+    <!--display:flex; --> 
+    <!--justify-content: main axis buyu hewtee tenhelgiin zeregtsuulel hiine-->
+    <!--align-items: cross axis buyu bosoo tenhlegiin zeregtsuulelt hiine-->
+    <div class="main-box"></div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+        <div class="box">Box-6</div>
+        <div class="box">Box-7</div>
+        <div class="box">Box-8</div>
+        <div class="box">Box-9</div>
+        
+</body>
+</html>
